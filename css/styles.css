@@ -243,7 +243,7 @@ footer .copyright {
 
     .content-right h3 { color: #09268c; }
 
-    /* Scheme */
+    /* Scheme - Du an*/
     .scheme .name { text-align: center; font-size: 20px;}
 
     .scheme .time { margin-bottom: 0; }
@@ -252,7 +252,7 @@ footer .copyright {
 
     .scheme .director, .scheme .organization { display: inline; }
 
-    /* Scheme target */
+    /* Scheme target - Muc tieu du an (Muc tieu chung va Muc tieu cu the)*/
     .common-target {
         margin: 20px 0;
     }
@@ -263,7 +263,8 @@ footer .copyright {
         display: block;
     }
 
-    .common-target .title, .specific-target .title { margin-bottom: 5px; }
+    .common-target .title, .specific-target .title,
+    .scheme-product .title { margin-bottom: 5px; }
 
     .specific-target .box-content {
         border: 1px solid;
@@ -275,12 +276,50 @@ footer .copyright {
         margin-left: 18px;
     }
 
-    /* New contribute */
+    /* New contribute - Dong gop moi cho de tai */
     .new-contribute-img {
         /*width: 100%;*/
     }
 
     .new-contribute .title { margin-bottom: 5px; }
+
+    /* Scheme product - San pham de tai */
+    .scheme-product .list-scheme-product li {
+        padding: 10px 15px;
+        background: #e0e08a;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+
+    .scheme-product .list-scheme-product li a { color: #d25426}
+
+    .scheme-product .list-scheme-product .desc { margin-top: 5px; }
+
+    .scheme-product .list-scheme-product .read-more { float: right; }
+
+    /* Detail scheme product - Chi tiet san pham de tai */
+    .detail-scheme-product .content {
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .detail-scheme-product .content .name { margin-top: 0; }
+
+    .detail-scheme-product .content a { color: #af1717; }
+
+    .detail-scheme-product .content .author { 
+        float: right;
+    }
+
+    .detail-scheme-product .form-comment div,
+    .detail-scheme-product .form-comment form textarea {
+        margin-bottom: 10px;
+    }
+
+    .detail-scheme-product .form-comment form textarea { display: block; }
+    .detail-scheme-product .other-post a { color: #035291; line-height: 25px; }
+    .detail-scheme-product .other-post a:hover { text-decoration: underline; }
 }
 
 @media screen and (min-width: 1024px)
