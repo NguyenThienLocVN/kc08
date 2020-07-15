@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHƯƠNG TRÌNH KC.08/16-20</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="./images/banner.jpg" alt="image-banner" class="image-banner">
+            <ul class="text-banner-tablet">
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Sơ đồ trang</a></li>
+                <li><a href="#">Đăng nhập</a></li>
+                <li><a href="#">English</a></li>
+                <div><input type="text" name="search-banner" id="search-banner" class="search-banner" placeholder="Nội dung tìm kiếm ..."><i class="fa fa-search" aria-hidden="true"></i></div>
+            </ul>
+
+            <ul class="text-banner-mobile">
+                <li><i class="fa fa-align-justify" aria-hidden="true" onclick="ToggleMobileTextBanner();"></i><input type="text" name="search-banner" id="search-banner" class="search-banner" placeholder="Nội dung tìm kiếm ..."><i class="fa fa-search" aria-hidden="true"></i></li>
+                <ul class="text-banner-item display-none" id="text-banner-item">
+                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#">Sơ đồ trang</a></li>
+                    <li><a href="#">Đăng nhập</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="content">
+                <ul class="sidebar-left">
+                    <li><a href="trang-chu.html">TRANG CHỦ</a></li>
+                    <li><a href="#">THÔNG TIN CHUNG</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <ul class="submenu">
+                            <li><a href="muc-tieu-de-tai.html">MỤC TIÊU ĐỀ TÀI</a></li>
+                            <li><a href="#">SẢN PHẨM ĐỀ TÀI</a></li>
+                            <li><a href="dong-gop-moi-cua-de-tai.html">ĐÓNG GÓP MỚI CỦA ĐỀ TÀI</a></li>
+                            <li><a href="#">CÁC SẢN PHẨM ĐÃ CÔNG BỐ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">CÁC BÁO CÁO SẢN PHẨM</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <ul class="submenu">
+                            <li><a href="#">BÁO CÁO SẢN PHẨM A</a></li>
+                            <li><a href="#">BÁO CÁO SẢN PHẨM B</a></li>
+                            <li><a href="#">BÁO CÁO SẢN PHẨM C</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">GIỚI THIỆU KHU VỰC NGHIÊN CỨU</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+                        <ul class="submenu">
+                            <li><a href="#">ĐẶC ĐIỂM ĐIỀU KIỆN TỰ NHIÊN</a><i class="fa fa-caret-right" aria-hidden="true"></i>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">VỊ TRÍ ĐỊA LÝ</a></li>
+                                    <li><a href="#">ĐẶC ĐIỂM ĐỊA HÌNH</a></li>
+                                    <li><a href="#">THỔ NHƯỠNG</a></li>
+                                    <li><a href="#">THẢM PHỦ THỰC VẬT RỪNG VÀ HỆ THỰC VẬT</a></li>
+                                    <li><a href="#">HỆ THỐNG SÔNG NGÒI</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">HIỆN TRẠNG KHAI THÁC, SỬ DỤNG ĐẤT VEN SÔNG</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">DỮ LIỆU ĐỀ TÀI</a></li>
+                    <li><a href="#">HIỆN TƯỢNG SẠT LỞ BỜ SÔNG</a></li>
+                </ul>
+                <div class="content-right">
+                    <div class="new-contribute">
+                        <h3 class="title"><i class="fa fa-circle" aria-hidden="true"></i>&nbsp;Những đóng góp mới của đề tài</h3>
+                        <img src="./images/nhung-dong-gop-cua-de-tai.png" class="new-contribute-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            
+            <div class="copyright">
+                <span>&copy; Copyright 2020 Chương trình KC.08/16-20 </span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
