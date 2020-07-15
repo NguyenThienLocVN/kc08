@@ -167,6 +167,8 @@ footer .copyright {
         line-height: 35px;
     }
 
+    .intro-content .intro-text h2 { color: #035291; }
+
     .intro-content .img-background {
         width: 100%;
         height: 620px;
