@@ -291,9 +291,16 @@ footer .copyright {
     /* Scheme product - San pham de tai */
     .scheme-product .list-scheme-product li {
         padding: 10px 15px;
-        background: #e0e08a;
+        background: #f5f596;
         margin-bottom: 20px;
         display: inline-block;
+        width: 100%;
+    }
+
+    .list-scheme-product .title {
+        padding-bottom: 3px;
+        border-bottom: 1px solid;
+        display: block;
     }
 
     .scheme-product .list-scheme-product li a { color: #d25426}
@@ -332,7 +339,7 @@ footer .copyright {
     .topographic-characteristics .img-location { text-align: center; }
 
     .geographical-location .img-location img,
-    .topographic-characteristics .img-location img { width: 100%; }
+    .topographic-characteristics .img-location img { width: 80%; }
 
     .geographical-location .content, 
     .topographic-characteristics .content { 
