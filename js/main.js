@@ -1,5 +1,5 @@
 function ToggleMobileTextBanner() {
-    var x = document.getElementById("text-banner-item");
+    var x = document.getElementById("sidebar-left-mobile");
     if (x.style.display === "none") {
       x.style.display = "block";
     } else {

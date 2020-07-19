@@ -32,31 +32,33 @@ a { text-decoration: none; color: #035291; }
 .text-banner-mobile {
     background: #035291;
     width: 100%;
+    padding: 15px;
+    margin-top: -5px;
+}
+
+.text-banner-mobile li {
     display: flex;
-    flex-direction: column;
+    align-items: center;
 }
 
 .text-banner-mobile a, .text-banner-mobile i {
     color: #fff;
 }
 
-.text-banner-mobile .fa-align-justify { padding: 10px; }
-
-.text-banner-mobile li {
-    padding: 10px 10px;
-}
-
-.text-banner-mobile div {
-    padding: 10px 0;
-}
-
-.text-banner-mobile .search-banner {
-    margin: 0 10px;
-    border-radius: 4px;
-    border: none;
-    outline: none;
-    padding: 7px;
+.text-banner-mobile input {
+    padding: 5px;
     width: 80%;
+}
+
+.text-banner-mobile i {
+    width: 10%;
+}
+
+.text-banner-mobile .fa-align-justify { text-align: left; }
+.text-banner-mobile .fa-search { text-align: right; }
+
+.text-banner-tablet input{
+    margin: 0 10px;
 }
 
 .button-start {
@@ -104,6 +106,103 @@ a { text-decoration: none; color: #035291; }
     margin-right: 10px;
 }
 
+/* Sidebar */
+#sidebar-left-mobile { display: none; }
+.sidebar-left { display: none; background: #4f93ca; }
+
+.sidebar-left li {
+    padding: 12px 15px;
+    background: #4f93ca;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    border-bottom: 1px solid #a0b1ef;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+#sidebar-left-mobile li {
+    padding: 12px 15px;
+    background: #4f93ca;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: relative;
+    border-bottom: 1px solid #a0b1ef;
+    display: block;
+}
+
+#sidebar-left-mobile li i { float: right; }
+
+.sidebar-left li i, .sidebar-left li a {
+    color: #fff; 
+}
+
+#sidebar-left-mobile .submenu, #sidebar-left-mobile .sub-submenu {
+    display: none;
+}
+
+#sidebar-left-mobile .submenu li {
+    padding-left: 30px;
+    background: #2c6fa5;
+}
+
+#sidebar-left-mobile .sub-submenu li {
+    padding-left: 60px;
+    background: #224561;
+}
+
+#sidebar-left-mobile li:active + .submenu { display: block; }
+#sidebar-left-mobile li:active + .submenu li:active + .sub-submenu { display: block; }
+
+/* Content */
+.content .file-action { padding: 10px 0; }
+.content .file-action a { margin-right: 15px; }
+.excerpt { text-align: justify; }
+
+
+.content-right { padding: 15px; }
+
+.content-right h3 { color: #09268c; margin: 10px 0 5px 0; }
+.content-right h4 { margin: 5px 0; }
+
+/* Content image */
+.scheme img, .common-target img, .specific-target img,
+.new-contribute img, .geographical-location img, .topographic-characteristics img { width: 100%; }
+
+/* Scheme product */
+.scheme-product .list-scheme-product li {
+    padding: 10px 15px;
+    background: #f5f596;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.list-scheme-product .title {
+    padding-bottom: 3px;
+    border-bottom: 1px solid;
+    display: block;
+}
+
+.scheme-product .list-scheme-product li a { color: #d25426}
+.scheme-product .list-scheme-product .read-more { float: right; }
+
+/* Vi tri dia ly & Dac diem dia hinh */
+.geographical-location .img-location,
+.topographic-characteristics .img-location { text-align: center; }
+
+/* Chi tiet san pham de tai */
+.detail-scheme-product .content a { display: block; }
+.detail-scheme-product .form-comment input, .detail-scheme-product .form-comment textarea{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.detail-scheme-product .form-comment textarea { display: block; }
+
+.detail-scheme-product .other-post .list-other-post li{ margin-bottom: 15px; }
+
 /* Footer */
 footer {
     clear: both;
@@ -112,7 +211,7 @@ footer {
 footer .copyright {
     background: #035291;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     color: #fff;
 }
 
@@ -181,22 +280,11 @@ footer .copyright {
     }
     
     /* Content */
+    .sidebar-left { display: block; }
     .sidebar-left {
         width: 25%;
         float: left;
         height: 650px;
-        background: #4f93ca;
-    }
-    
-    .sidebar-left li {
-        padding: 12px 15px;
-        background: #4f93ca;
-        cursor: pointer;
-        transition: all 0.5s;
-        position: relative;
-        display: flex;
-        align-items: center;
-        border-bottom: 1px solid #a0b1ef;
     }
 
     .sidebar-left li:hover {
@@ -204,20 +292,14 @@ footer .copyright {
         border-left: 3px solid #014c8a;
     }
 
-    .sidebar-left i {
-        color: #fff;
-        float: right;
-    }
-
     .sidebar-left li a { 
-        color: #fff; 
         font-size: 13px;
         width: 100%;
         display: block;
         line-height: 25px;
     }
 
-    .sidebar-left .submenu { 
+    .sidebar-left .submenu {
         display: none;
         position: absolute;
         top: 0;
@@ -241,10 +323,7 @@ footer .copyright {
     .content-right {
         width: 75%;
         float: right;
-        padding: 0 20px;
     }
-
-    .content-right h3 { color: #09268c; }
 
     /* Scheme - Du an*/
     .scheme .name { text-align: center; font-size: 20px;}
@@ -282,32 +361,11 @@ footer .copyright {
     }
 
     /* New contribute - Dong gop moi cho de tai */
-    .new-contribute-img {
-        /*width: 100%;*/
-    }
 
-    .new-contribute .title { margin-bottom: 5px; }
+    .new-contribute .title { margin-bottom: 5px; line-height: 22px;}
 
     /* Scheme product - San pham de tai */
-    .scheme-product .list-scheme-product li {
-        padding: 10px 15px;
-        background: #f5f596;
-        margin-bottom: 20px;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .list-scheme-product .title {
-        padding-bottom: 3px;
-        border-bottom: 1px solid;
-        display: block;
-    }
-
-    .scheme-product .list-scheme-product li a { color: #d25426}
-
     .scheme-product .list-scheme-product .desc { margin-top: 5px; }
-
-    .scheme-product .list-scheme-product .read-more { float: right; }
 
     /* Detail scheme product - Chi tiet san pham de tai */
     .detail-scheme-product .content {
@@ -315,6 +373,10 @@ footer .copyright {
         width: 100%;
         margin-bottom: 25px;
     }
+
+    .detail-scheme-product .content a { display: unset; }
+
+    .detail-scheme-product .other-post .list-other-post li{ margin: 0; }
 
     .detail-scheme-product .content .name { margin-top: 0; }
 
@@ -335,8 +397,6 @@ footer .copyright {
 
     /* Introduct research area - Gioi thieu khu vuc nghien cuu */
     /* Geographical Location - Vi tri dia ly*/
-    .geographical-location .img-location,
-    .topographic-characteristics .img-location { text-align: center; }
 
     .geographical-location .img-location img,
     .topographic-characteristics .img-location img { width: 80%; }
@@ -345,24 +405,6 @@ footer .copyright {
     .topographic-characteristics .content { 
         display: flex;
         flex-direction: column;
-    }
-
-    .geographical-location .content .file-action,
-    .topographic-characteristics .file-action,
-    .land .file-action,
-    .floral .file-action,
-    .river-system .file-action { padding: 10px 0; }
-
-    .geographical-location .content .file-action a,
-    .topographic-characteristics .content .file-action a,
-    .land .content .file-action a,
-    .floral .content .file-action a,
-    .river-system .content .file-action a
-    { margin-right: 15px; }
-
-    .floral .excerpt,
-    .land .excerpt {
-        text-align: justify;
     }
 
     /* Floral - Tham phu thuc vat rung va he thuc vat*/
@@ -376,6 +418,7 @@ footer .copyright {
 
 @media screen and (min-width: 1024px)
 {
+    .scheme img { width: unset; }
     .scheme .name h4 { font-size: 17px;}
     .scheme strong { font-size: 18px; }
 }
