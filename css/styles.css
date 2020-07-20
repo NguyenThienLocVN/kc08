@@ -199,6 +199,14 @@ a { text-decoration: none; color: #035291; }
     margin-bottom: 5px;
 }
 
+.detail-scheme-product .form-comment .comment-btn-submit {
+    background: indianred;
+    border: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
 .detail-scheme-product .form-comment textarea { display: block; }
 
 .detail-scheme-product .other-post .list-other-post li{ margin-bottom: 15px; }
