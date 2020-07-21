@@ -234,6 +234,16 @@ a { text-decoration: none; color: #035291; }
 
 .detail-scheme-product .other-post .list-other-post li{ margin-bottom: 15px; }
 
+/* So lieu quan trac */
+.monitoring-data .date-picker { display: flex; }
+.monitoring-data .date-picker .start { margin-right: 30px; }
+.monitoring-data .date-picker .btn-monitoring-search {
+    background: indianred;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
 /* Footer */
 footer {
     clear: both;
