@@ -222,7 +222,7 @@ a { text-decoration: none; color: #035291; }
     margin-bottom: 5px;
 }
 
-.detail-scheme-product .form-comment .comment-btn-submit {
+.detail-scheme-product .form-comment .comment-btn-submit, .monitoring-data .btn-monitoring-search {
     background: indianred;
     border: none;
     color: #fff;
@@ -237,12 +237,7 @@ a { text-decoration: none; color: #035291; }
 /* So lieu quan trac */
 .monitoring-data .date-picker { display: flex; }
 .monitoring-data .date-picker .start { margin-right: 30px; }
-.monitoring-data .date-picker .btn-monitoring-search {
-    background: indianred;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-}
+.monitoring-data .btn-monitoring-search { margin: 10px 0; }
 
 /* Footer */
 footer {
@@ -259,8 +254,6 @@ footer .copyright {
 
 @media screen and (min-width: 768px)
 {
-    .container { width: 85%; }
-
     .text-banner-mobile { display: none; }
 
     .text-banner-tablet {
@@ -460,6 +453,7 @@ footer .copyright {
 
 @media screen and (min-width: 1024px)
 {
+    .container { width: 85%; }
     .intro-content .intro-text h2 { font-size: x-large; line-height: unset; }
     .info-contact { padding: 15px 35px; }
     .scheme img { width: unset; }
